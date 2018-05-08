@@ -12,7 +12,7 @@ The decision boundary is excactly halfway between two points for different class
 Euclidean distance or simple straight line to measure the distance between points. The most common distance metric and the one that scikit-learn uses by default is the euclidean instead of straight line distance. 
 2. The number of K nearest neighbors  
 The value of K is at least 1 and typically an odd number.  
-3.Optional weighting function on the nearest neighbors points
+3. Optional weighting function on the nearest neighbors points
 Some cases, you may want to give some neighbors more influence on the outcome. It's optional.  
 4. Method for aggregating the classed of nearest neighbors points  
 Typically use simple majority vote.
