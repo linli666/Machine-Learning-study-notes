@@ -2,7 +2,7 @@
 ##
 The K-Nearest Neighbors algorithm can be used for classification and regression. For now, I focus on classification. K-NN classifier is memory based supervised learning, which means it memorize all the labeled examples in the training set and then use those memorized examples to classify new object later.   
 1. What K means?  
-K is how many number of nearest points you want to use to do predict. Typically, the value of K is an odd number. When K is greater than 1, we use simple majority vote to decide which class the new object belongs to.
+K is how many number of nearest points you want to use to do predict. Typically, the value of K is an odd number. When K is greater than 1, we use simple majority vote to decide which class the new object belongs to. The greater K will make the decision boundary more smoothy. The decrease of K will increase the risk of overfitting of the model.  
 (To find the best value of K, we can write a for loop for multiple K values.)
 2. Decision Boundary  
 The decision boundary is excactly halfway between two points for different classes.
@@ -12,7 +12,7 @@ The decision boundary is excactly halfway between two points for different class
 Euclidean distance or simple straight line to measure the distance between points. The most common distance metric and the one that scikit-learn uses by default is the euclidean instead of straight line distance. 
 2. The number of K nearest neighbors  
 The value of K is at least 1 and typically an odd number.  
-3. Optional weighting function on the nearest neighbors points
+3. Optional weighting function on the nearest neighbors points  
 Some cases, you may want to give some neighbors more influence on the outcome. It's optional.  
 4. Method for aggregating the classed of nearest neighbors points  
 Typically use simple majority vote.
